@@ -14,9 +14,38 @@
   <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=2.0" />
   <link rel="manifest" href="./manifest.json?v=2.0" />
   <link rel="alternate" type="application/atom+xml;profile=opds-catalog" title="阿牛书院 OPDS 订阅源" href="./opds.xml" />
-  <link rel="stylesheet" href="./style.css?v=2.0" />
+  <link rel="stylesheet" href="./style.css?v=2.1" />
 </head>
 <body>
+  <!-- ========================================================
+       VIP 专属密码门禁遮罩层 (首次输入 13947223459 永久免输，不影响 App 导入)
+       ======================================================== -->
+  <div class="gatekeeper-overlay" id="gatekeeperOverlay">
+    <div class="gatekeeper-card">
+      <div class="gate-logo-wrap">
+        <img src="./logo_aniu.png?v=2.1" alt="阿牛书院" class="gate-logo" />
+      </div>
+      <h2>阿牛书院 · 私人数字图书馆</h2>
+      <p class="gate-sub">豹哥专属私密馆藏 · 请输入 VIP 通行密码解锁全库 24,250+ 册藏书</p>
+      <form onsubmit="verifyGatePassword(event)" class="gate-form">
+        <input
+          type="password"
+          inputmode="tel"
+          id="gatePasswordInput"
+          class="gate-input"
+          placeholder="请输入专属通行密码..."
+          autocomplete="current-password"
+          required
+        />
+        <div class="gate-error" id="gateErrorMsg"></div>
+        <button type="submit" class="gate-submit-btn">🔓 立即解锁进入书院</button>
+      </form>
+      <div class="gate-hint">
+        💡 本设备首次验证通过后将自动永久记住登录状态 · 不影响 Kindle App 与苹果图书导入
+      </div>
+    </div>
+  </div>
+
   <!-- 顶部导航栏 -->
   <header class="top-header">
     <div class="header-inner">
@@ -293,8 +322,8 @@
   <div class="toast-msg" id="toastMsg">已复制到剪贴板</div>
 
   <!-- 引入本地 CDN 托管的 JSZip 与 epub.js 引擎 -->
-  <script src="./vendor/jszip.min.js?v=2.0"></script>
-  <script src="./vendor/epub.min.js?v=2.0"></script>
-  <script src="./app.js?v=2.0"></script>
+  <script src="./vendor/jszip.min.js?v=2.1"></script>
+  <script src="./vendor/epub.min.js?v=2.1"></script>
+  <script src="./app.js?v=2.1"></script>
 </body>
 </html>

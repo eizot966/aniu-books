@@ -57,8 +57,47 @@ function showToast(msg) {
   window.__toastTimer = setTimeout(() => el.classList.remove("show"), 3200);
 }
 
+const VIP_ACCESS_CODE = "13947223459";
+
+function checkGatekeeperAuth() {
+  const overlay = document.getElementById("gatekeeperOverlay");
+  if (!overlay) return;
+  const params = new URLSearchParams(window.location.search);
+  const urlPwd = params.get("pwd") || params.get("pass");
+  const saved = localStorage.getItem("aniu_book_vip_pass");
+
+  if (saved === VIP_ACCESS_CODE || urlPwd === VIP_ACCESS_CODE) {
+    localStorage.setItem("aniu_book_vip_pass", VIP_ACCESS_CODE);
+    overlay.classList.add("unlocked");
+  } else {
+    overlay.classList.remove("unlocked");
+    setTimeout(() => document.getElementById("gatePasswordInput")?.focus(), 100);
+  }
+}
+
+function verifyGatePassword(event) {
+  if (event) event.preventDefault();
+  const inp = document.getElementById("gatePasswordInput");
+  const errEl = document.getElementById("gateErrorMsg");
+  const val = (inp?.value || "").trim();
+
+  if (val === VIP_ACCESS_CODE) {
+    localStorage.setItem("aniu_book_vip_pass", VIP_ACCESS_CODE);
+    document.getElementById("gatekeeperOverlay")?.classList.add("unlocked");
+    if (errEl) errEl.textContent = "";
+    showToast("🔓 欢迎回来，豹哥！阿牛书院全库已为您解锁");
+  } else {
+    if (errEl) errEl.textContent = "❌ 通行密码不正确，请重新输入";
+    if (inp) {
+      inp.value = "";
+      inp.focus();
+    }
+  }
+}
+
 // 初始化入口
 document.addEventListener("DOMContentLoaded", async () => {
+  checkGatekeeperAuth();
   applySiteTheme(STATE.siteTheme);
   updatePrivateCounts();
   renderContinueReadingBar();
