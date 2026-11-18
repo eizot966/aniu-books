@@ -1,0 +1,23 @@
+{
+  "name": "阿牛书院 · 豹哥私人数字图书馆",
+  "short_name": "阿牛书院",
+  "description": "融合 Calibre-Web 与万卷藏书阁的 Serverless 旗舰电子书库，支持 iPhone / iPad / Kindle App / Apple 图书一键导入与网页在线即读",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f19",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

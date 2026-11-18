@@ -1,0 +1,9 @@
+{
+  "name": "aniu-books",
+  "version": "2.0.0",
+  "private": true,
+  "description": "阿牛书院 · 豹哥私人数字图书馆 (Calibre-Pro Serverless Edition)",
+  "scripts": {
+    "build": "echo 'Static & Edge Functions ready in public/ and functions/'"
+  }
+}

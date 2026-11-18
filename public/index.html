@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>阿牛书院 · 豹哥私人数字图书馆 | iPhone · iPad · Kindle 旗舰书库</title>
+  <meta name="description" content="阿牛书院 (book.88996688.xyz) — 融合 Calibre-Web 在线阅读与 24,000+ 万卷藏书阁的零负载旗舰电子书库，完美适配 iPhone、iPad、Apple Books 与亚马逊 Kindle。" />
+  <meta name="theme-color" content="#090d16" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="阿牛书院" />
+  <link rel="icon" href="/favicon.ico?v=2.0" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png?v=2.0" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2.0" />
+  <link rel="manifest" href="/manifest.json?v=2.0" />
+  <link rel="alternate" type="application/atom+xml;profile=opds-catalog" title="阿牛书院 OPDS 订阅源" href="/opds.xml" />
+  <link rel="stylesheet" href="/style.css?v=2.0" />
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <header class="top-header">
+    <div class="header-inner">
+      <a href="/" class="brand-wrap" onclick="switchShelf('all'); return false;">
+        <img src="/logo_aniu.png?v=2.0" alt="阿牛书院 Logo" class="brand-logo" />
+        <div class="brand-titles">
+          <h1>阿牛书院 <span class="brand-badge">Calibre-Pro</span></h1>
+          <p>iPhone · iPad · Kindle 墨水屏 · 在线即点即读</p>
+        </div>
+      </a>
+
+      <!-- 全局毫秒级搜索框 -->
+      <div class="search-bar-wrap">
+        <span class="search-icon">🔍</span>
+        <input
+          type="search"
+          id="globalSearchInput"
+          class="search-input"
+          placeholder="搜索 24,250+ 册藏书、作者、分类（如：纳瓦尔、东野圭吾、经济学人、历史、架构）..."
+          autocomplete="off"
+        />
+        <button id="clearSearchBtn" class="search-clear-btn" style="display:none;" onclick="clearSearch()">清除</button>
+      </div>
+
+      <!-- 快捷功能与生态矩阵 -->
+      <div class="header-actions">
+        <label class="action-pill primary" title="直接打开手机或电脑里的 .epub / .txt 电子书在线阅读">
+          📂 打开本地书
+          <input type="file" id="localBookInput" accept=".epub,.txt" style="display:none;" onchange="handleLocalFile(event)" />
+        </label>
+        <button class="action-pill" onclick="openKindleModal()">✈️ Kindle / 苹果导入指南</button>
+        <button class="action-pill" id="themeToggleBtn" onclick="cycleSiteTheme()">📜 切换护眼主题</button>
+        <a href="https://game.88996688.xyz" target="_blank" rel="noopener" class="action-pill">🎮 阿牛游戏库</a>
+        <a href="https://movie.88996688.xyz" target="_blank" rel="noopener" class="action-pill">🎬 阿牛影院</a>
+        <a href="https://music.88996688.xyz" target="_blank" rel="noopener" class="action-pill">🎵 阿牛音乐</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主体双栏 Calibre-Web 书房架构 -->
+  <main class="main-layout">
+    <!-- 左侧书房分类抽屉 -->
+    <aside class="sidebar">
+      <div class="sidebar-section-title">📚 核心书房馆藏</div>
+      <button class="nav-item active" data-shelf="all" onclick="switchShelf('all')">
+        <span>🌟 书院精选总览</span>
+        <span class="nav-count" id="countAll">24,253</span>
+      </button>
+      <button class="nav-item" data-shelf="direct" onclick="switchShelf('direct')">
+        <span>⚡ 免网盘直链秒读</span>
+        <span class="nav-count" id="countDirect">182</span>
+      </button>
+      <button class="nav-item" data-shelf="cdn" onclick="switchShelf('cdn')">
+        <span>🏛️ 本站CDN名著经典</span>
+        <span class="nav-count">22</span>
+      </button>
+      <button class="nav-item" data-shelf="magazine" onclick="switchShelf('magazine')">
+        <span>🌍 经济学人/纽约客外刊</span>
+        <span class="nav-count">7</span>
+      </button>
+      <button class="nav-item" data-shelf="geek" onclick="switchShelf('geek')">
+        <span>💻 极客时间153册直链</span>
+        <span class="nav-count">153</span>
+      </button>
+      <button class="nav-item" data-shelf="treasure" onclick="switchShelf('treasure')">
+        <span>📦 万卷藏书阁全库</span>
+        <span class="nav-count" id="countTreasure">11,390</span>
+      </button>
+      <button class="nav-item" data-shelf="gutendex" onclick="switchShelf('gutendex')">
+        <span>🌐 全球公版7万册直链</span>
+        <span class="nav-count">Live</span>
+      </button>
+
+      <div class="sidebar-section-title">⭐ 私人书房 (Calibre)</div>
+      <button class="nav-item" data-shelf="favorites" onclick="switchShelf('favorites')">
+        <span>❤️ 我的收藏书架</span>
+        <span class="nav-count" id="countFav">0</span>
+      </button>
+      <button class="nav-item" data-shelf="history" onclick="switchShelf('history')">
+        <span>🕒 最近阅读进度</span>
+        <span class="nav-count" id="countHist">0</span>
+      </button>
+
+      <div class="sidebar-section-title">🏷️ 1,000 细分分类检索</div>
+      <input
+        type="text"
+        id="catFilterInput"
+        class="search-input"
+        style="padding:0.4rem 0.75rem; font-size:0.78rem; margin-bottom:0.45rem;"
+        placeholder="筛选 1,000 个分类标签..."
+        oninput="renderCategoryChips(this.value)"
+      />
+      <div class="category-chips" id="categoryChipsWrap"></div>
+    </aside>
+
+    <!-- 右侧主展示区 -->
+    <section class="content-area">
+      <!-- 顶部生态引导横幅 -->
+      <div class="hero-banner" id="heroBanner">
+        <div class="hero-left">
+          <h2>
+            <span>📖 阿牛书院 · 全平台无界阅读中心</span>
+            <span class="brand-badge">Serverless 零负载旗舰</span>
+          </h2>
+          <p>
+            汇聚 <strong>182 册免网盘直链秒读 EPUB</strong>（含四大名著、史记、鲁迅全集、纳瓦尔宝典、经济学人/纽约客最新外刊、极客时间 153 册专栏）+ <strong>24,071 条樊登/微信/京东读书全分类精校藏书</strong>。支持网页内直接翻页阅读，或一键导入 iPhone / iPad 的 <strong>Kindle App</strong> 与 <strong>苹果「图书」</strong>！
+          </p>
+          <div class="device-badges">
+            <span class="device-badge" onclick="openKindleModal()">📱 iPhone / iPad：点【直下 EPUB】➔ 分享至 Kindle App / 苹果图书</span>
+            <span class="device-badge" onclick="openKindleModal()">📟 亚马逊 Kindle 墨水屏：支持 Send-to-Kindle 网页/邮箱隔空秒推</span>
+            <span class="device-badge" onclick="toggleEinkMode()">👁️ 点此切换 Kindle 墨水屏黑白极简模式</span>
+            <span class="device-badge" onclick="copyOpdsUrl()">📡 复制 Calibre OPDS 订阅源</span>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-num" id="statDirectNum">182</div>
+            <div class="stat-label">⚡ 免网盘直链秒读</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" id="statTreasureNum">24,071</div>
+            <div class="stat-label">🏛️ 分类馆藏条目</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">1,000</div>
+            <div class="stat-label">🏷️ 细分学科标签</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 继续阅读横条 (有阅读记录时自动显示) -->
+      <div class="continue-reading-bar" id="continueReadingBar" style="display:none;"></div>
+
+      <!-- 全网影子书库实时穿透面板 (搜索或切换至穿透时显示) -->
+      <div class="shadow-matrix-box" id="shadowMatrixBox" style="display:none;">
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:0.5rem;">
+          <div>
+            <strong style="color:var(--accent-gold);">🌐 全网影子书库一键穿透矩阵</strong>
+            <span style="font-size:0.8rem; color:var(--text-sub); margin-left:0.5rem;">
+              除本馆 2.4 万册藏书外，可一键穿透检索全球最大开源直链书库（直接下载 `.epub` / `.azw3`）：
+            </span>
+          </div>
+          <button class="action-pill" onclick="searchGutendexLive()">🔄 实时检索 Gutenberg 7万册直链库</button>
+        </div>
+        <div class="shadow-links" id="shadowLinksWrap"></div>
+      </div>
+
+      <!-- 当前分区标题与统计 -->
+      <div class="section-header">
+        <div>
+          <h3 id="currentSectionTitle">🌟 阿牛严选 · 免网盘直链秒读馆（即点即读 & 一键导入 Kindle/图书）</h3>
+          <p class="section-sub" id="currentSectionSub">无需网盘提取码！点击【📖 在线即读】直接在浏览器内翻页看书，点击【📲 直下 EPUB】1 秒导入 iPhone/iPad Kindle App 或苹果自带图书</p>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center;">
+          <select id="formatFilterSelect" class="action-pill" onchange="applyFilters()">
+            <option value="all">全部书源类型</option>
+            <option value="direct">⚡ 仅看免网盘直链 (.epub)</option>
+            <option value="ctfile">📦 万卷藏书阁三格式 (.epub/.mobi/.azw3)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 书籍卡片网格 -->
+      <div class="books-grid" id="booksGrid"></div>
+
+      <!-- 加载更多按钮 -->
+      <div class="load-more-wrap" id="loadMoreWrap" style="display:none;">
+        <button class="btn-load-more" onclick="loadMoreBooks()">👇 加载更多馆藏好书</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       内置全功能 Calibre-Web 级 EPUB/TXT 在线阅读器 Modal
+       ======================================================== -->
+  <div class="reader-modal" id="readerModal">
+    <div class="reader-toolbar">
+      <div style="display:flex; align-items:center; gap:0.55rem;">
+        <button class="r-btn" onclick="closeReader()">✕ 返回书架</button>
+        <button class="r-btn" onclick="toggleTocDrawer()">📑 目录</button>
+        <span class="reader-book-title" id="readerBookTitle">正在加载电子书...</span>
+      </div>
+      <div class="reader-controls">
+        <button class="r-btn" onclick="changeReaderFontSize(-15)" title="缩小字号">A-</button>
+        <button class="r-btn" onclick="changeReaderFontSize(15)" title="放大字号">A+</button>
+        <button class="r-btn" onclick="setReaderTheme('dark')">🌙 暗黑</button>
+        <button class="r-btn" onclick="setReaderTheme('sepia')">📜 羊皮纸</button>
+        <button class="r-btn" onclick="setReaderTheme('light')">☀️ 白昼</button>
+        <button class="r-btn" onclick="setReaderTheme('eink')">📟 墨水屏</button>
+        <a id="readerDownloadBtn" href="#" class="r-btn" style="text-decoration:none; background:#f59e0b; color:#fff; border-color:transparent;">📲 导入Kindle/图书</a>
+      </div>
+    </div>
+
+    <div class="reader-stage-wrap">
+      <aside class="reader-toc-drawer" id="readerTocDrawer">
+        <div style="font-weight:700; margin-bottom:0.6rem; color:#f59e0b;">📖 章节目录</div>
+        <div id="readerTocList"></div>
+      </aside>
+      <div id="epubViewer"></div>
+    </div>
+
+    <div class="reader-footer">
+      <button class="r-btn" onclick="readerPrevPage()">⬅️ 上一页 / 上一章 (←)</button>
+      <span id="readerProgressText">准备就绪 · 支持键盘左右方向键或触屏翻页</span>
+      <button class="r-btn" onclick="readerNextPage()">下一页 / 下一章 (→) ➡️</button>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       iPhone / iPad / Kindle App / 墨水屏 极速导入与推送指南弹窗
+       ======================================================== -->
+  <div class="dialog-backdrop" id="kindleModal" onclick="if(event.target===this)closeKindleModal()">
+    <div class="dialog-box">
+      <div class="dialog-header">
+        <h3>✈️ iPhone / iPad / 亚马逊 Kindle 极速看书全攻略</h3>
+        <button class="r-btn" onclick="closeKindleModal()">✕ 关闭</button>
+      </div>
+
+      <div class="guide-step">
+        <h4>📱 方式一：iPhone / iPad 用【Kindle App】或【苹果自带图书 (Books)】（最推荐！）</h4>
+        <p>
+          1. 在《阿牛书院》找到带 <strong>⚡ 免网盘直链</strong> 的书，点击 <strong>【📲 导入 Kindle/图书】</strong>。<br/>
+          2. Safari 弹出下载提示后，点击地址栏旁的 <strong>下载箭头图标 ➔ 点击刚下载的 `.epub` 文件</strong>。<br/>
+          3. 点击右上角 <strong>分享按钮 ➔ 选择「Kindle」或「图书 (Books)」</strong>，1 秒直接进书架并自动跨设备云同步阅读进度！
+        </p>
+      </div>
+
+      <div class="guide-step">
+        <h4>📟 方式二：亚马逊 Kindle 墨水屏阅读器隔空推送（Send to Kindle）</h4>
+        <p style="margin-bottom:0.55rem;">
+          亚马逊官方已全面原生支持 <strong>`.epub`</strong> 格式自动排版推送！您可以通过以下两种方式秒推到墨水屏：
+        </p>
+        <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.65rem;">
+          <a href="https://www.amazon.com/sendtokindle" target="_blank" rel="noopener" class="action-pill primary">
+            🚀 打开亚马逊官方 Send-to-Kindle 网页直推
+          </a>
+          <button class="action-pill" onclick="toggleEinkMode(); closeKindleModal();">
+            📟 开启本站 Kindle 墨水屏黑白极简模式
+          </button>
+        </div>
+        <div style="display:flex; gap:0.5rem; align-items:center; flex-wrap:wrap;">
+          <input
+            type="email"
+            id="kindleEmailInput"
+            class="search-input"
+            style="max-width:280px; padding:0.4rem 0.8rem; font-size:0.82rem;"
+            placeholder="填入您的 xxx@kindle.com 接收邮箱"
+          />
+          <button class="action-pill" onclick="saveKindleEmail()">💾 保存我的 Kindle 邮箱</button>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <h4>📦 方式三：万卷藏书阁（24,071 册城通网盘源）免输密码技巧</h4>
+        <p>
+          点击本院「万卷藏书阁」任意书籍的 <strong>【📦 领书 (自动复制8866)】</strong> 按钮时，系统会<strong>全自动帮您把提取码 <code>8866</code> 复制到剪贴板</strong>！跳转页面后直接长按粘贴即可下载 `.epub / .mobi / .azw3`，下好后同样可点击顶栏 <strong>【📂 打开本地书】</strong> 在本站内直接阅读！
+        </p>
+      </div>
+
+      <div class="guide-step">
+        <h4>📡 方式四：Calibre-Web 标准 OPDS 书库订阅（高级极客用法）</h4>
+        <p style="margin-bottom:0.45rem;">
+          如果您在 iPhone / iPad / Android / KOReader 上使用支持 OPDS 的阅读器（如 Readest、KyBook、KOReader、静读天下），可直接添加本院 OPDS 订阅地址：
+        </p>
+        <div style="display:flex; gap:0.5rem; align-items:center;">
+          <code style="background:rgba(0,0,0,0.3); padding:0.35rem 0.65rem; border-radius:6px; font-size:0.8rem; flex:1;">https://book.88996688.xyz/opds.xml</code>
+          <button class="action-pill" onclick="copyOpdsUrl()">📋 一键复制</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 全局轻提示 Toast -->
+  <div class="toast-msg" id="toastMsg">已复制到剪贴板</div>
+
+  <!-- 引入本地 CDN 托管的 JSZip 与 epub.js 引擎 -->
+  <script src="/vendor/jszip.min.js?v=2.0"></script>
+  <script src="/vendor/epub.min.js?v=2.0"></script>
+  <script src="/app.js?v=2.0"></script>
+</body>
+</html>

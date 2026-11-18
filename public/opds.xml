@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/terms/" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>urn:aniu-books:catalog</id>
+  <title>阿牛书院 · 豹哥私人数字图书馆 (OPDS 直链书架)</title>
+  <subtitle>融合 Calibre-Web &amp; 万卷藏书阁 · 支持 iPhone / iPad / Kindle / KOReader / Readest 一键订阅</subtitle>
+  <updated>2026-11-18T04:23:25Z</updated>
+  <author>
+    <name>阿牛店长 (book.88996688.xyz)</name>
+    <uri>https://book.88996688.xyz</uri>
+  </author>
+  <icon>https://book.88996688.xyz/icon.png</icon>
+  <link rel="self" href="https://book.88996688.xyz/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://book.88996688.xyz/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>纳瓦尔宝典：财富与幸福指南（精粹版）</title>
+    <id>urn:aniu-books:cdn-1</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>埃里克·乔根森 / 纳瓦尔</name></author>
+    <category term="商业财富" label="商业财富"/>
+    <summary type="text">硅谷传奇投资人纳瓦尔关于财富积累与幸福人生的智慧结晶，解锁代码与媒体杠杆。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/naval_almanack_zh.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>穷查理宝典：查理·芒格多元思维模型精要</title>
+    <id>urn:aniu-books:cdn-2</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>查理·芒格</name></author>
+    <category term="投资思维" label="投资思维"/>
+    <summary type="text">巴菲特黄金搭档查理·芒格一生推崇的多元思维模型格栅理论与逆向思考法则。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/poor_charlie_zh.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>孙子兵法·十三篇原文与白话商业精解</title>
+    <id>urn:aniu-books:cdn-3</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>孙武</name></author>
+    <category term="历史谋略" label="历史谋略"/>
+    <summary type="text">兵学圣典十三篇原文与现代商业竞争、人生战略法则深度对译。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/sunzi_vernacular.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>苏东坡传世诗词文赋精编</title>
+    <id>urn:aniu-books:cdn-4</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>苏轼</name></author>
+    <category term="文学经典" label="文学经典"/>
+    <summary type="text">竹杖芒鞋轻胜马，一蓑烟雨任平生：收录东坡巅峰词作与前后《赤壁赋》。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/sudongpo_collection.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>毛泽东诗词鉴赏全集（精校版）</title>
+    <id>urn:aniu-books:cdn-5</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>毛泽东</name></author>
+    <category term="文学诗词" label="文学诗词"/>
+    <summary type="text">收录《沁园春·雪》《沁园春·长沙》《七律·长征》等气吞山河的经典诗词。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/mao_poems_complete.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>新加坡顶尖名校 (NTU/NUS/SMU) 全英文写作与面试秘籍</title>
+    <id>urn:aniu-books:cdn-6</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>阿牛书院·升学智库</name></author>
+    <category term="英语与留学" label="英语与留学"/>
+    <summary type="text">专为冲刺南洋理工、新国大、新管大打造的高阶学术英语论证框架与跨学科面试指南。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/astrid_singapore_guide.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>西游记（百回全本精校）</title>
+    <id>urn:aniu-books:cdn-7</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>吴承恩</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">中国古典神魔小说巅峰之作，馆藏全本精校无删减直链 EPUB。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/xiyouji.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>红楼梦（百二十回全本精校）</title>
+    <id>urn:aniu-books:cdn-8</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>曹雪芹</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">中国古典文学皇冠上的明珠，支持网页内即点即读与一键导入苹果图书/Kindle。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/hongloumeng.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>三国演义（全本精校）</title>
+    <id>urn:aniu-books:cdn-9</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>罗贯中</name></author>
+    <category term="历史名著" label="历史名著"/>
+    <summary type="text">滚滚长江东逝水，浪花淘尽英雄。中国第一部长篇章回体历史演义小说。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/sanguoyanyi.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>水浒传（全本精校）</title>
+    <id>urn:aniu-books:cdn-10</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>施耐庵</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">梁山泊一百零八将忠义江湖史诗，全本直链秒下。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/shuihuzhuan.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>史记（太史公书全本）</title>
+    <id>urn:aniu-books:cdn-11</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>司马迁</name></author>
+    <category term="历史经典" label="历史经典"/>
+    <summary type="text">究天人之际，通古今之变，成一家之言。二十四史开山巨著。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/shiji.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>道德经（老子八十一章精校）</title>
+    <id>urn:aniu-books:cdn-12</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>老子</name></author>
+    <category term="哲学国学" label="哲学国学"/>
+    <summary type="text">道可道，非常道。东方哲学万经之王，上善若水与无为而治的最高智慧。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/daodejing.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>论语（儒家四书精校）</title>
+    <id>urn:aniu-books:cdn-13</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>孔子及弟子</name></author>
+    <category term="哲学国学" label="哲学国学"/>
+    <summary type="text">半部《论语》治天下，记录孔子及其弟子言行的东方文化基石。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/lunyu.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>孙子兵法（古本全卷）</title>
+    <id>urn:aniu-books:cdn-14</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>孙武</name></author>
+    <category term="历史谋略" label="历史谋略"/>
+    <summary type="text">世界三大兵书之首，百战百胜的战略圣经。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/sunzibingfa.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>周易·易经（六十四卦全本）</title>
+    <id>urn:aniu-books:cdn-15</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>姬昌 / 孔子</name></author>
+    <category term="哲学国学" label="哲学国学"/>
+    <summary type="text">天行健，君子以自强不息；地势坤，君子以厚德载物。群经之首，大道之源。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/yijing.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>山海经（上古地理神话全本）</title>
+    <id>urn:aniu-books:cdn-16</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>佚名</name></author>
+    <category term="神话古籍" label="神话古籍"/>
+    <summary type="text">记载上古山川、奇兽、神祇与远古神话的旷世奇书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/shanhaijing.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>呐喊（鲁迅代表作小说集）</title>
+    <id>urn:aniu-books:cdn-17</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>鲁迅</name></author>
+    <category term="现代文学" label="现代文学"/>
+    <summary type="text">收录《狂人日记》《阿Q正传》《孔乙己》《药》《故乡》等中国现代文学奠基之作。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/nahan.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>彷徨（鲁迅小说集）</title>
+    <id>urn:aniu-books:cdn-18</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>鲁迅</name></author>
+    <category term="现代文学" label="现代文学"/>
+    <summary type="text">收录《祝福》《伤逝》《在酒楼上》《孤独者》等鲁迅成熟期巅峰小说。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/panghuang.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>朝花夕拾（鲁迅回忆散文集）</title>
+    <id>urn:aniu-books:cdn-19</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>鲁迅</name></author>
+    <category term="现代文学" label="现代文学"/>
+    <summary type="text">收录《从百草园到三味书屋》《藤野先生》《阿长与山海经》等温情而又犀利的经典散文。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/zhaohuaxishi.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>儒林外史（全本精校）</title>
+    <id>urn:aniu-books:cdn-20</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>吴敬梓</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">中国古典讽刺文学的最高峰，刻画世情百态入木三分。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/rulinwaishi.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>封神演义（百回全本）</title>
+    <id>urn:aniu-books:cdn-21</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>许仲琳</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">姜子牙辅周伐纣、众仙斗法封神的东方奇幻史诗。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/fengshenyanyi.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>老残游记（全本精校）</title>
+    <id>urn:aniu-books:cdn-22</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>刘鹗</name></author>
+    <category term="古典名著" label="古典名著"/>
+    <summary type="text">晚清四大谴责小说中艺术成就最高之作，景物描写堪称绝唱。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://book.88996688.xyz/epubs/laocanyouji.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The Economist 经济学人 (2026.11.14 最新刊)</title>
+    <id>urn:aniu-books:te-20261114</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The Economist</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/01_economist/te_2026.11.14/TheEconomist.2026.11.14.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The Economist 经济学人 (2026.11.07 刊)</title>
+    <id>urn:aniu-books:te-20261107</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The Economist</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/01_economist/te_2026.11.07/TheEconomist.2026.11.07.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The Economist 经济学人 (2026.10.31 刊)</title>
+    <id>urn:aniu-books:te-20261031</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The Economist</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/01_economist/te_2026.10.31/TheEconomist.2026.10.31.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The Economist 经济学人 (2026.10.24 刊)</title>
+    <id>urn:aniu-books:te-20261024</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The Economist</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/01_economist/te_2026.10.24/TheEconomist.2026.10.24.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The New Yorker 纽约客 (2026.11.16 最新刊)</title>
+    <id>urn:aniu-books:ny-20261116</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The New Yorker</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/02_new_yorker/2026.11.16/new_yorker.2026.11.16.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>WIRED 连线杂志 (2026.11 最新月刊)</title>
+    <id>urn:aniu-books:wired-20261102</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>WIRED Magazine</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/05_wired/2026.11.02/wired_2026.11.02.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>The Atlantic 大西洋月刊 (2026 精选合刊)</title>
+    <id>urn:aniu-books:atlantic-20260902</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>The Atlantic</name></author>
+    <category term="外刊精读" label="外刊精读"/>
+    <summary type="text">原版高清英文外刊，支持网页内直接点开即读（epub.js），或一键下载导入 iPad/iPhone Kindle App 与 Apple 图书。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/hehonghui/awesome-english-ebooks/master/04_atlantic/2026.09.02/Atlantic_2026.09.02.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《数据结构与算法之美》全集精编版</title>
+    <id>urn:aniu-books:gt-01-数据结构与算法之美</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《数据结构与算法之美》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/01-数据结构与算法之美.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《Java核心技术面试精讲》全集精编版</title>
+    <id>urn:aniu-books:gt-02-Java核心技术面试精讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《Java核心技术面试精讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/02-Java核心技术面试精讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《从0开始学架构》全集精编版</title>
+    <id>urn:aniu-books:gt-03-从0开始学架构</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《从0开始学架构》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/03-从0开始学架构.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《左耳听风》全集精编版</title>
+    <id>urn:aniu-books:gt-04-左耳听风</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《左耳听风》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/04-左耳听风.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《趣谈网络协议》全集精编版</title>
+    <id>urn:aniu-books:gt-05-趣谈网络协议</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《趣谈网络协议》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/05-趣谈网络协议.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《MySQL实战45讲》全集精编版</title>
+    <id>urn:aniu-books:gt-06-MySQL实战45讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《MySQL实战45讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/06-MySQL实战45讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《重学前端》全集精编版</title>
+    <id>urn:aniu-books:gt-07-重学前端</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《重学前端》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/07-重学前端.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《深入拆解Java虚拟机》全集精编版</title>
+    <id>urn:aniu-books:gt-08-深入拆解Java虚拟机</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《深入拆解Java虚拟机》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/08-深入拆解Java虚拟机.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《Go语言核心36讲》全集精编版</title>
+    <id>urn:aniu-books:gt-09-Go语言核心36讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《Go语言核心36讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/09-Go语言核心36讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《如何设计一个秒杀系统》全集精编版</title>
+    <id>urn:aniu-books:gt-10-如何设计一个秒杀系统</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《如何设计一个秒杀系统》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/10-如何设计一个秒杀系统.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《后端技术面试38讲》全集精编版</title>
+    <id>urn:aniu-books:gt-101-后端技术面试38讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《后端技术面试38讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/101-后端技术面试38讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《现代C++实战30讲》全集精编版</title>
+    <id>urn:aniu-books:gt-102-现代C++实战30讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《现代C++实战30讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/102-现代C++实战30讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《性能工程高手课》全集精编版</title>
+    <id>urn:aniu-books:gt-104-性能工程高手课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《性能工程高手课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/104-性能工程高手课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《安全攻防技能30讲》全集精编版</title>
+    <id>urn:aniu-books:gt-105-安全攻防技能30讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《安全攻防技能30讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/105-安全攻防技能30讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《性能测试实战30讲》全集精编版</title>
+    <id>urn:aniu-books:gt-106-性能测试实战30讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《性能测试实战30讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/106-性能测试实战30讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《摄影入门课》全集精编版</title>
+    <id>urn:aniu-books:gt-108-摄影入门课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《摄影入门课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/108-摄影入门课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《人人都能学会的编程入门课》全集精编版</title>
+    <id>urn:aniu-books:gt-109-人人都能学会的编程入门课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《人人都能学会的编程入门课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/109-人人都能学会的编程入门课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《程序员的数学基础课》全集精编版</title>
+    <id>urn:aniu-books:gt-11-程序员的数学基础课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《程序员的数学基础课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/11-程序员的数学基础课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《说透敏捷》全集精编版</title>
+    <id>urn:aniu-books:gt-110-说透敏捷</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《说透敏捷》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/110-说透敏捷.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《接口测试实战课》全集精编版</title>
+    <id>urn:aniu-books:gt-113-接口测试实战课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《接口测试实战课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/113-接口测试实战课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《分布式协议与算法实战》全集精编版</title>
+    <id>urn:aniu-books:gt-114-分布式协议与算法实战</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《分布式协议与算法实战》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/114-分布式协议与算法实战.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《RPC实战与核心原理》全集精编版</title>
+    <id>urn:aniu-books:gt-115-RPC实战与核心原理</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《RPC实战与核心原理》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/115-RPC实战与核心原理.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《架构实战案例解析》全集精编版</title>
+    <id>urn:aniu-books:gt-116-架构实战案例解析</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《架构实战案例解析》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/116-架构实战案例解析.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《后端存储实战课》全集精编版</title>
+    <id>urn:aniu-books:gt-117-后端存储实战课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《后端存储实战课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/117-后端存储实战课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《深入浅出云计算》全集精编版</title>
+    <id>urn:aniu-books:gt-118-深入浅出云计算</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《深入浅出云计算》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/118-深入浅出云计算.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《Java 业务开发常见错误 100 例》全集精编版</title>
+    <id>urn:aniu-books:gt-119-Java 业务开发常见错误 100 例</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《Java 业务开发常见错误 100 例》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/119-Java 业务开发常见错误 100 例.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《Linux性能优化实战》全集精编版</title>
+    <id>urn:aniu-books:gt-12-Linux性能优化实战</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《Linux性能优化实战》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/12-Linux性能优化实战.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《图解 Google V8》全集精编版</title>
+    <id>urn:aniu-books:gt-121-图解 Google V8</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《图解 Google V8》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/121-图解 Google V8.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《SRE实战手册》全集精编版</title>
+    <id>urn:aniu-books:gt-122-SRE实战手册</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《SRE实战手册》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/122-SRE实战手册.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《检索技术核心20讲》全集精编版</title>
+    <id>urn:aniu-books:gt-123-检索技术核心20讲</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《检索技术核心20讲》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/123-检索技术核心20讲.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+  <entry>
+    <title>《数据中台实战课》全集精编版</title>
+    <id>urn:aniu-books:gt-124-数据中台实战课</id>
+    <updated>2026-11-18T04:23:25Z</updated>
+    <author><name>极客时间名师专栏</name></author>
+    <category term="极客与AI" label="极客与AI"/>
+    <summary type="text">极客时间付费专栏《数据中台实战课》完整精校 EPUB 直链版，支持网页内直接阅读或一键导入 iPhone/iPad Kindle App。</summary>
+    <link rel="http://opds-spec.org/acquisition" href="https://raw.githubusercontent.com/CyberCommy/geektime-books/master/124-数据中台实战课.epub" type="application/epub+zip" title="下载 EPUB"/>
+  </entry>
+</feed>
