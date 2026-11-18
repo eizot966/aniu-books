@@ -99,9 +99,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // 第一步：秒加载 182 册免网盘直链秒读库
   try {
-    const r1 = await fetch("/data/featured_direct.json?v=2.0");
+    const r1 = await fetch("./data/featured_direct.json?v=2.0");
     STATE.directBooks = (await r1.json()).map(b => ({
       ...b,
+      epub: b.epub && b.epub.startsWith("/epubs/") ? "." + b.epub : b.epub,
       isDirect: true,
       categories: [b.category]
     }));
@@ -114,7 +115,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // 第二步：并行流式加载 24,071 条万卷藏书阁索引
   try {
-    const r2 = await fetch("/data/treasure_index.json?v=2.0");
+    const r2 = await fetch("./data/treasure_index.json?v=2.0");
     const tData = await r2.json();
     const prefix = tData.url_prefix || "https://url89.ctfile.com/f/31084289-";
     const suffix = tData.url_suffix || "?p=8866";
@@ -382,7 +383,10 @@ function renderBookCardHtml(b) {
 // 生成适配 iPhone / iPad 一键导入 Kindle App & 苹果图书的下载链接
 function getDirectDownloadUrl(b) {
   if (!b.epub) return "#";
-  if (b.epub.startsWith("/epubs/")) {
+  if (b.epub.startsWith("./epubs/") || b.epub.startsWith("/epubs/")) {
+    return b.epub;
+  }
+  if (window.location.hostname.endsWith("github.io")) {
     return b.epub;
   }
   const cleanFileName = `${b.title.replace(/[\\/:*?"<>|]/g, "_")}.epub`;
@@ -495,12 +499,13 @@ async function openReaderById(bookId) {
 
   try {
     let fetchUrl = b.epub;
-    if (!b.epub.startsWith("/")) {
+    const isLocalEpub = b.epub.startsWith("./epubs/") || b.epub.startsWith("/epubs/");
+    if (!isLocalEpub && !window.location.hostname.endsWith("github.io")) {
       fetchUrl = `/api/proxy-epub?url=${encodeURIComponent(b.epub)}`;
     }
 
     let resp = await fetch(fetchUrl);
-    if (!resp.ok && !b.epub.startsWith("/")) {
+    if (!resp.ok && !isLocalEpub) {
       // 本地开发或边缘回退：直接请求源地址
       resp = await fetch(b.epub);
     }
